@@ -68,6 +68,7 @@ export default async function GraphPage({
           <p>{membership.role} · {(persons ?? []).length} persone</p>
         </div>
         <div className="navActions">
+          <Link className="btn btnGhost" href={"/graph/" + id + "/people"}>Persone</Link>
           <Link className="btn btnGhost" href={"/graph/" + id + "/documents"}>Documenti</Link>
           <Link className="btn btnGhost" href={"/graph/" + id + "/settings"}>Gestione</Link>
           <Link className="btn btnPrimary" href={"/graph/" + id + "/settings#share"}>Condividi</Link>
